@@ -1323,7 +1323,7 @@ header .nav-height {
 }
 @media (max-width: 767.98px) {
   header .nav-height {
-    height: 56px;
+    height: 52px;
   }
 }
 header nav {
@@ -1343,8 +1343,8 @@ header nav {
 header nav .logo img[alt=logo] {
   width: 171px;
   height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 767.98px) {
   header nav .logo img[alt=logo] {
@@ -1358,12 +1358,18 @@ header nav .logo .nav-icon {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+@media (max-width: 575.98px) {
+  header nav .logo .nav-icon {
+    padding: 7px;
+    border-radius: 9px;
+  }
+}
 header nav .logo .nav-icon img {
   width: 41px;
 }
 @media (max-width: 575.98px) {
   header nav .logo .nav-icon img {
-    width: 35px;
+    width: 36px;
   }
 }
 header nav .header-content {
@@ -3994,8 +4000,8 @@ header.header-dashboard .header-content-wrapper {
 header.header-dashboard .header-content-wrapper .header-content .logo-image img {
   width: 171px;
   height: 76px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 575.98px) {
   header.header-dashboard .header-content-wrapper .header-content .logo-image img {
@@ -4104,6 +4110,11 @@ header.header-dashboard .header-content-wrapper .mobile-link {
     padding-bottom: 60px;
   }
 }
+@media (max-width: 575.98px) {
+  .search-box {
+    padding-bottom: 30px;
+  }
+}
 .search-box .cross-searchBox {
   position: absolute;
   background-color: #fff;
@@ -4128,6 +4139,11 @@ header.header-dashboard .header-content-wrapper .mobile-link {
   font-size: 26px;
   color: #8A1538;
   margin-bottom: 35px;
+}
+@media (max-width: 575.98px) {
+  .search-box .searh-box-title {
+    margin-bottom: 26px;
+  }
 }
 .search-box fieldset {
   display: flex;
@@ -4173,6 +4189,12 @@ header.header-dashboard .header-content-wrapper .mobile-link {
   color: rgb(115, 115, 115);
   margin-top: 33px;
   margin-bottom: 28px;
+}
+@media (max-width: 575.98px) {
+  .search-box h4, .search-box .h4 {
+    margin-top: 25px;
+    margin-bottom: 18px;
+  }
 }
 .search-box .recent-searches {
   display: flex;
@@ -6079,8 +6101,18 @@ main.studies-possibilities .single-education-details ul {
   }
 }
 
+@media (max-width: 575.98px) {
+  main.career-option .single-education-details {
+    margin-bottom: 30px;
+  }
+}
 main.career-option .single-education-details .single-education-title {
   margin-bottom: 60px;
+}
+@media (max-width: 575.98px) {
+  main.career-option .single-education-details .single-education-title {
+    margin-bottom: 30px;
+  }
 }
 main.career-option .single-education-details ul {
   display: grid;
@@ -6095,7 +6127,12 @@ main.career-option .single-education-details ul {
 @media (max-width: 575.98px) {
   main.career-option .single-education-details ul {
     grid-template-columns: auto;
+    padding-inline-start: 30px;
+    row-gap: 8px;
   }
+}
+main.career-option .single-education-details ul img {
+  width: 10px;
 }
 
 .breadcrum-wrapper {

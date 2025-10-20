@@ -10,7 +10,7 @@ header{
 	.nav-height{
 		height: 85px;
 		@include media-breakpoint-down(md){
-			height: 56px;
+			height: 52px;
 		}
 	}
 	
@@ -35,7 +35,7 @@ header{
 			img[alt="logo"]{
 				width: 171px;
 				height: 80px;
-				object-fit: cover;
+				object-fit: contain;
 			}
 			
 
@@ -50,10 +50,15 @@ header{
 				padding:10px;
 				border-radius: 12px;
 				border: 1px solid map-get($map: $color-map, $key: btn-border);
+				@include media-breakpoint-down(sm){
+					padding: 7px;
+					border-radius: 9px;
+				}
 				img{
 					width: 41px;
 					@include media-breakpoint-down(sm){
-						width: 35px;
+						
+						width: 36px;
 					}
 					
 				}

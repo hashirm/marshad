@@ -21,7 +21,7 @@ header.header-dashboard{
                 img{
                     width: 171px;
                     height: 76px;
-                    object-fit: cover;
+                    object-fit: contain;
                     @include media-breakpoint-down(sm){
                         width:86px;
                         object-fit:contain;
@@ -129,6 +129,10 @@ header.header-dashboard{
         padding-bottom:60px;
     }
 
+    @include media-breakpoint-down(sm){
+        padding-bottom: 30px;
+    }
+
     .cross-searchBox{
         position: absolute;
         background-color: map-get($map: $color-map, $key: white);
@@ -153,6 +157,10 @@ header.header-dashboard{
         font-size: 26px;
         color: map-get($map: $color-map, $key: bistre-10);
         margin-bottom: 35px;
+
+        @include media-breakpoint-down(sm){
+            margin-bottom: 26px;
+        }
     
     }
     fieldset{
@@ -201,6 +209,11 @@ header.header-dashboard{
         color: map-get($map: $color-map, $key: grey);
         margin-top:33px;
         margin-bottom: 28px;
+
+        @include media-breakpoint-down(sm){
+            margin-top:25px;
+            margin-bottom: 18px;
+        }
 
     }
 

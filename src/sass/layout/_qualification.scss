@@ -75,8 +75,15 @@ main.studies-possibilities{
 main.career-option{
 
     .single-education-details{
+        @include media-breakpoint-down(sm){
+            margin-bottom: 30px;
+        }
         .single-education-title{
              margin-bottom:60px;
+             @include media-breakpoint-down(sm){
+                margin-bottom: 30px;
+                
+             }
         }
         ul{
             display: grid;
@@ -88,6 +95,11 @@ main.career-option{
             }
             @include media-breakpoint-down(sm){
                 grid-template-columns: auto;
+                padding-inline-start: 30px;
+                row-gap: 8px;
+            }
+            img{
+                width: 10px;
             }
             // max-height: 295px;
         }
